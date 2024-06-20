@@ -48,3 +48,15 @@ Traceback (most recent call last):
     from PySide2.QtWidgets import QApplication, QDialog, QFileDialog, QMessageBox
 ModuleNotFoundError: No module named 'PySide2'
 
+Last open time2024/06/20 16:05:04:
+-----------------
+Traceback (most recent call last):
+  File "D:\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+

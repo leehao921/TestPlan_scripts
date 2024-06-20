@@ -7,6 +7,8 @@ import os.path
 import sys
 import importlib
 import traceback
+import time 
+current_time = time.strftime('%Y/%m/%d %H:%M:%S',time.localtime(time.time()))
 
 logFile=os.path.abspath(os.path.join(os.path.dirname(__file__),'scripts.log'))
 sys.path.insert(0,sys.argv[1])
@@ -19,6 +21,7 @@ try:
 except Exception as reason:
     print(f"Call script {sys.argv[2]} error!\n")
     with open(logFile,'a',encoding='utf-8') as f:
+        f.write("Last open time"+current_time+':\n-----------------\n')
         traceback.print_exc(file=f)
         f.write('\n')
     exit(-1)
