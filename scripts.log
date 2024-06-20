@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "D:\SemitronixTool\scripts\proxy.py", line 15, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Traceback (most recent call last):
+  File "D:\SemitronixTool\scripts\proxy.py", line 15, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\SemitronixTool\scripts\import_other_test_plan\import_other_test_plan_dlg.py", line 5, in <module>
+    from PySide2.QtWidgets import QApplication, QDialog, QFileDialog, QMessageBox
+ModuleNotFoundError: No module named 'PySide2'
+
+Traceback (most recent call last):
+  File "D:\SemitronixTool\scripts\proxy.py", line 15, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Traceback (most recent call last):
+  File "D:\SemitronixTool\scripts\proxy.py", line 15, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\SemitronixTool\scripts\import_other_test_plan\import_other_test_plan_dlg.py", line 5, in <module>
+    from PySide2.QtWidgets import QApplication, QDialog, QFileDialog, QMessageBox
+ModuleNotFoundError: No module named 'PySide2'
+
