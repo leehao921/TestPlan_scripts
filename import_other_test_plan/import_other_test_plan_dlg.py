@@ -7,6 +7,7 @@ from PySide2.QtGui import Qt,QIcon
 from UI.main_window_ui import Ui_importOtherTestPlanDlg
 from importOtherTestplanLib.importOtherTestplan import importOtherTestPlan
 from UI.icon_rc import qInitResources
+import time 
 
 '''
 Author  : chuiting.kong
@@ -109,7 +110,9 @@ class MyWidgets(QDialog):
                 self.close()
         except:
             logFile = os.path.abspath(os.path.join(os.path.dirname(__file__),'../scripts.log'))
+            current_time = time.strftime('%Y/%m/%d %H:%M:%S',time.localtime(time.time()))
             with open(logFile, 'a', encoding='utf-8') as f:
+                f.write("Last open time "+current_time+':\n-----------------\n')
                 traceback.print_exc(file=f)
                 f.write('\n')
             return self.errBox("Conversion falied, please check the format !")

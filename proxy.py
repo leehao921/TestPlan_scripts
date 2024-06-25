@@ -21,7 +21,7 @@ try:
 except Exception as reason:
     print(f"Call script {sys.argv[2]} error!\n")
     with open(logFile,'a',encoding='utf-8') as f:
-        f.write("Last open time"+current_time+':\n-----------------\n')
+        f.write("Last open time "+current_time+':\n-----------------\n')
         traceback.print_exc(file=f)
         f.write('\n')
     exit(-1)
