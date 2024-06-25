@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='GBK'?>
+<SMTTestPlan>
+	<WaferSpecLib />
+	<DieSpecLib />
+	<TestSpecLib>
+		<TestSpec Name="XXXX_lab">
+			<Device>
+				<Head>[Select] [Module] [Device ] [Group] [Algorithm  ] [Input                                                                                                                                                                                                                 ] [Pad] [Output                                                 ] [Limit] [Comment] </Head>
+				<Item> #        C01      N_3ux40           N3_IDS_V1     Width=3,Length=0.04,Mode="S1111",V1=1.2,V2=1.2,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=0,Itrig=0,Adc=0,Inte=0,Plc=0,Port=0,Sadc=0,Unit=1.0E+06,Norm="uA/um",T1=1,T2=4,T3=6,T4=24                IDS_N_3ux40                                                                </Item>
+				<Item> #        C01      N_3ux40           N3_IOFF_V1    Width=3,Length=0.04,Mode="S1111",V1=1.2,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.1,M_Range=0,Adc=1,Inte=3,Plc=1,Port=0,Sadc=1,Unit=1.0E+12,Norm="pA/um",T1=1,T2=4,T3=6,T4=24                           IDOFF_N_3ux40,IGOFF_N_3ux40,ISOFF_N_3ux40,IBOFF_N_3ux40                    </Item>
+				<Item> #        C01      N_3ux40           N3_Vtcc_V1    Width=3,Length=0.04,Mode="S1111",V1=0.05,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=1.0E-09,Itrig=8.0E-08,Adc=0,Inte=0,Plc=0,Port=0,Sadc=0,Unit=1,Norm="V",T1=1,T2=4,T3=6,T4=24               VTCC_N_3ux40                                                               </Item>
+				<Item> #        C01      N_3ux40           N3_Vtcc_V1    Width=3,Length=0.04,Mode="S1111",V1=1.2,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=1.0E-09,Itrig=8.0E-08,Adc=0,Inte=0,Plc=0,Port=0,Sadc=0,Unit=1,Norm="V",T1=1,T2=4,T3=6,T4=24                VTCCSAT_N_3ux40                                                            </Item>
+				<Item> #        C01      N_3ux40           N3_FVMI_V1    Width=3,Length=0.04,Mode="S1111",V1=1.2,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=0,Adc=0,Inte=0,Plc=0,Port=0,Sadc=1,Unit=1.0E+12,Norm="pA/um",T1=1,T2=4,T3=0,T4=24                          IGIDL_N_3ux40                                                              </Item>
+				<Item> #        C01      N_3ux40           N3_FVMI_V1    Width=3,Length=0.04,Mode="S1111",V1=0,V2=0,V3=0,V4=-1.2,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=0,Adc=0,Inte=0,Plc=0,Port=0,Sadc=1,Unit=1.0E+12,Norm="pA/um",T1=1,T2=4,T3=0,T4=24                         IJXN_N_3ux40                                                               </Item>
+				<Item> #        C01      N_3ux42           N3_IDS_V1     Width=3,Length=0.042,Mode="S1111",V1=1.2,V2=1.2,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=0,Itrig=0,Adc=0,Inte=0,Plc=0,Port=0,Sadc=0,Unit=1.0E+06,Norm="uA/um",T1=5,T2=4,T3=6,T4=24               IDS_N_3ux42                                                                </Item>
+				<Item> #        C01      N_3ux42           N3_IOFF_V1    Width=3,Length=0.042,Mode="S1111",V1=1.2,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.1,M_Range=0,Adc=1,Inte=3,Plc=1,Port=0,Sadc=1,Unit=1.0E+12,Norm="pA/um",T1=5,T2=4,T3=6,T4=24                          IDOFF_N_3ux42,IGOFF_N_3ux42,ISOFF_N_3ux42,IBOFF_N_3ux42                    </Item>
+				<Item> #        C01      N_3ux42           N3_Vtcc_V1    Width=3,Length=0.042,Mode="S1111",V1=0.05,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=1.0E-09,Itrig=8.0E-08,Adc=0,Inte=0,Plc=0,Port=0,Sadc=0,Unit=1,Norm="V",T1=5,T2=4,T3=6,T4=24              VTCC_N_3ux42                                                               </Item>
+				<Item> #        C01      N_3ux42           N3_Vtcc_V1    Width=3,Length=0.042,Mode="S1111",V1=1.2,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=1.0E-09,Itrig=8.0E-08,Adc=0,Inte=0,Plc=0,Port=0,Sadc=0,Unit=1,Norm="V",T1=5,T2=4,T3=6,T4=24               VTCCSAT_N_3ux42                                                            </Item>
+				<Item> #        C01      N_3ux42           N3_FVMI_V1    Width=3,Length=0.042,Mode="S1111",V1=1.2,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=0,Adc=0,Inte=0,Plc=0,Port=0,Sadc=1,Unit=1.0E+12,Norm="pA/um",T1=5,T2=4,T3=0,T4=24                         IGIDL_N_3ux42                                                              </Item>
+				<Item> #        C01      N_3ux42           N3_FVMI_V1    Width=3,Length=0.042,Mode="S1111",V1=0,V2=0,V3=0,V4=-1.2,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,M_Range=0,Adc=0,Inte=0,Plc=0,Port=0,Sadc=1,Unit=1.0E+12,Norm="pA/um",T1=5,T2=4,T3=0,T4=24                        IJXN_N_3ux42                                                               </Item>
+				<Item> #        C01      N_3ux42           N3_Ibmax_V1   Width=3,Length=0.042,Mode="S1111",V1=1.2,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vstart=0,Vstop=1.2,Vstep=0.1,Vcomp=20,Icomp=0.1,Wt=0.01,Adc=0,Inte=0,Plc=0,Port=0,Sadc=0,Unit=1.0E+06,Norm="uA",T1=5,T2=4,T3=6,T4=24         Isub_N_3ux42,Vg_N_3ux42                                                    </Item>
+				<Item> #        C01      N_3ux42           N3_FIMV_V1    Width=3,Length=0.042,Mode="S1111",V1=1.0E-06,V2=0,V3=0,V4=0,V5=0,V6=0,Type=1,M_Port=1,Vcomp=20,Icomp=0.1,Wt=0.01,Adc=0,Inte=0,Plc=1,Port=0,Sadc=0,Unit=1,Norm="V",T1=5,T2=4,T3=6,T4=24                                         BVDSS_N_3ux42                                                              </Item>
+			</Device>
+			<Description>
+				<Head>[Description         ] </Head>
+				<Item> Test spec from Excel  </Item>
+			</Description>
+		</TestSpec>
+	</TestSpecLib>
+	<SuperTestSpecLib />
+	<ProbeSpecLib />
+</SMTTestPlan>
