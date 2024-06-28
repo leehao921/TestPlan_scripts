@@ -156,4 +156,6 @@ def importTpxFile(self, filesMap: {}, flagsMap: {}):
     else:
         return False, 'Please select at least one spec file !'
     return True, ''
+# Conclution
+exe中的內容無法做任何編輯，只能請原廠那邊重新編輯，但是串接的python script 已經完成，並且完成相關測試。
 
