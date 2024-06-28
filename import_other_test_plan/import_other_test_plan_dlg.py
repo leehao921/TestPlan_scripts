@@ -59,21 +59,28 @@ class MyWidgets(QDialog):
 
     def onSelectFile(self):
         _filter = ''
-        filePath = ''
+        filePaths = []
         _button = self.sender()
         for key,val in self.buttonMap.items():
            if _button == val[1]:
                _filter = val[0]
                _filter = '*.' + _filter
-               filePath, _ext = QFileDialog.getOpenFileName(self, '选择文件', '', _filter)
-               if not filePath:
+               #!----------------0625 logs------------------#
+               #! Propose: instead of select a file,change  #
+               #! getOpenFileName -> getOpenFileName to get #
+               #! multiple files.                           #
+               #!-------------------------------------------#
+               filePaths, _ext = QFileDialog.getOpenFileNames(self, '选择文件', '', _filter)
+               if not filePaths:
+                   print("not file paths")
                    return
-               val[2].setText(filePath)
+               val[2].setText(', '.join(filePaths))
                break
-        for key, val in self.buttonMap.items():
-            if val[2].text() == '' and key != 'mapping' and key != 'template' and key != 'shot':
-                _res = self.searchFile(filePath, val[0])
-                val[2].setText(_res)
+        # for key, val in self.buttonMap.items():
+        #     if val[2].text() == '' and key != 'mapping' and key != 'template' and key != 'shot':
+        #         # _res = self.searchFile(filePaths[0], val[0])## search first file only 
+        #         # print(_res)
+        #         val[2].setText(', '.join(filePaths))
 
     @staticmethod
     def searchFile(filePath,fileExt):
@@ -83,7 +90,7 @@ class MyWidgets(QDialog):
         _fileName = os.listdir(_Dir)
         _resFiles = [_file for _file in _fileName if _file.endswith(fileExt) and _NameNoExt in _file]
         if len(_resFiles) != 0:
-            _res = os.path.join(_Dir, _resFiles[0]).replace('\\', '/')
+            _res = [os.path.join(_Dir, _file).replace('\\', '/') for _file in _resFiles]
         return _res
 
     def onCancel(self):
@@ -100,14 +107,14 @@ class MyWidgets(QDialog):
             flag, err = tt.importTpxFile(filesMap,flagsMap)
             if not flag:
                 return self.errBox(err)
-            file_path = os.path.abspath("temp.tpx")
-            flag, err = tt.exportTpx(file_path)
-            if not flag:
-                return self.errBox(err)
-            else:
-                self.res = file_path
-                self.opration = 'TST'
-                self.close()
+            file_paths = [os.path.abspath(f"{key}.tpx") for key in filesMap.keys()]
+            for file_path in file_paths: 
+                flag, err = tt.exportTpx(file_path)
+                if not flag:
+                    return self.errBox(err)
+            self.res = file_paths
+            self.opration = 'TST'
+            self.close()
         except:
             logFile = os.path.abspath(os.path.join(os.path.dirname(__file__),'../scripts.log'))
             current_time = time.strftime('%Y/%m/%d %H:%M:%S',time.localtime(time.time()))
@@ -119,15 +126,30 @@ class MyWidgets(QDialog):
 
     
     def collageValAndCheck(self,filesMap,flagsMap):
+        # val[0] can get attribute type of the file waf,die,csv....
         for key,val in self.buttonMap.items():
-            _filePath = val[2].text()
-            filesMap[key] = _filePath
-            if _filePath != '' and not os.path.exists(_filePath):
-                err = f'{key} file is not exist !'.capitalize()
-                self.errBox(err)
-                return False
+            # if val[2].text() == '' and key != 'mapping' and key != 'template' and key != 'shot':# but it doesnt create filesMap[mapping]
+                
+                #print(val)['waf', <PySide2.QtWidgets.QPushButton(0x13bcd1d3920, name="pushButtonWaf") at 0x0000013BCD580FC8>, <PySide2.QtWidgets.QLineEdit(0x13bcd1d1af0, name="lineEditWaf") at 0x0000013BCD580F48>]
+            
+                _filePaths = val[2].text().split(', ')
+                if len(_filePaths) > 1:
+                    filesMap[key] = _filePaths
+                elif len(_filePaths) == 1:
+                    filesMap[key] = _filePaths[0]
+                else:
+                    filesMap[key] = ''
+                print(f"\\\\\\\-----{key}--------\\\\\\\\\\\\\\\\")
+                print("key= "+str(filesMap[key]))
+                for _filePath in _filePaths: 
+                    print(_filePath)
+                    if _filePath != '' and not os.path.exists(_filePath):
+                        err = f'{key} file {_filePath} does not exist !'.capitalize()
+                        self.errBox(err)
+                        return False
         for key,val in self.checkBoxMap.items():
             flagsMap[key] = val[0].isChecked()
+
         return True
 
 
@@ -150,4 +172,4 @@ def main(_inputMap):
 if __name__ == "__main__":
     inputMap = {}
     res = main(inputMap)
-    print(res['1'])
+    # print(res['1'])

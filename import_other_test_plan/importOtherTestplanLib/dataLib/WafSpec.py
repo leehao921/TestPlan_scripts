@@ -2,8 +2,6 @@ import xml.etree.ElementTree as ET
 
 from .prettyXML import prettyXml
 
-
-
 '''
 Author  : jianghao.zheng
 Date    : 2023/7/19
