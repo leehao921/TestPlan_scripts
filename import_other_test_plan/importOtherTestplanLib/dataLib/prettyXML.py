@@ -13,5 +13,3 @@ def prettyXml(element, indent, newline, level=0):
         else:
             subelement.tail = newline + indent * level
         prettyXml(subelement, indent, newline, level=level + 1)
-
-

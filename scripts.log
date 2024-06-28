@@ -60,3 +60,173 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
 ModuleNotFoundError: No module named 'LogsBackups'
 
+Last open time2024/06/20 16:24:43:
+-----------------
+Traceback (most recent call last):
+  File "D:\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Last open time2024/06/20 16:24:56:
+-----------------
+Traceback (most recent call last):
+  File "D:\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Last open time 2024/06/21 09:10:22:
+-----------------
+Traceback (most recent call last):
+  File "D:\Felix\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Last open time 2024/06/21 13:18:25:
+-----------------
+Traceback (most recent call last):
+  File "D:\Felix\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Last open time 2024/06/21 13:19:20:
+-----------------
+Traceback (most recent call last):
+  File "D:\Felix\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Last open time 2024/06/21 13:21:14:
+-----------------
+Traceback (most recent call last):
+  File "D:\Felix\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Last open time 2024/06/21 13:42:21:
+-----------------
+Traceback (most recent call last):
+  File "D:\Felix\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Last open time 2024/06/21 13:42:26:
+-----------------
+Traceback (most recent call last):
+  File "D:\Felix\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Felix\SemitronixTool\scripts\import_other_test_plan\import_other_test_plan_dlg.py", line 8, in <module>
+    from importOtherTestplanLib.importOtherTestplan import importOtherTestPlan
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Felix\SemitronixTool\scripts\import_other_test_plan\importOtherTestplanLib\importOtherTestplan.py", line 3, in <module>
+    from .dataLib import TestPlan as tpx
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Felix\SemitronixTool\scripts\import_other_test_plan\importOtherTestplanLib\dataLib\TestPlan.py", line 3, in <module>
+    from .WafSpec import WafSpec
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Felix\SemitronixTool\scripts\import_other_test_plan\importOtherTestplanLib\dataLib\WafSpec.py", line 3, in <module>
+    from prettyXML import prettyXml
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+ModuleNotFoundError: No module named 'prettyXML'
+
+Last open time 2024/06/21 13:45:42:
+-----------------
+Traceback (most recent call last):
+  File "D:\Felix\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Felix\SemitronixTool\scripts\import_other_test_plan\import_other_test_plan_dlg.py", line 8, in <module>
+    from importOtherTestplanLib.importOtherTestplan import importOtherTestPlan
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Felix\SemitronixTool\scripts\import_other_test_plan\importOtherTestplanLib\importOtherTestplan.py", line 3, in <module>
+    from .dataLib import TestPlan as tpx
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Felix\SemitronixTool\scripts\import_other_test_plan\importOtherTestplanLib\dataLib\TestPlan.py", line 3, in <module>
+    from .WafSpec import WafSpec
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Felix\SemitronixTool\scripts\import_other_test_plan\importOtherTestplanLib\dataLib\WafSpec.py", line 3, in <module>
+    from prettyXML import prettyXml
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+ModuleNotFoundError: No module named 'prettyXML'
+
+Last open time 2024/06/21 13:45:50:
+-----------------
+Traceback (most recent call last):
+  File "D:\Felix\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+
+Last open time 2024/06/25 08:50:07:
+-----------------
+Traceback (most recent call last):
+  File "D:\Felix\SemitronixTool\scripts\proxy.py", line 17, in <module>
+    module_name = importlib.import_module(sys.argv[2])
+  File "C:\Users\GTI-Felix\.Anaconda3\envs\SMT\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'LogsBackups'
+

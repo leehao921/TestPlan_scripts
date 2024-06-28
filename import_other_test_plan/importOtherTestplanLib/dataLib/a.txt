@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<WaferSpec Name="0145">
+	<DiePosition>
+		<Head>[Select] [Die ] [X ] [Y ] [Site] </Head>
+		<Item>          0145   0    3          </Item>
+		<Item> #        0145   -2   1          </Item>
+		<Item>          0145   2    1          </Item>
+		<Item>          0145   5    0          </Item>
+		<Item>          0145   0    0          </Item>
+		<Item>          0145   -5   0          </Item>
+		<Item>          0145   -2   -1         </Item>
+		<Item>          0145   2    -1         </Item>
+		<Item>          0145   0    -3         </Item>
+	</DiePosition>
+	<Attribute>
+		<Head>[Name      ] [Value       ] [Type   ] [Unit] [Comment                                                                                                                                             ] </Head>
+		<Item> SIZE         300            REAL      mm     Diameter of wafer                                                                                                                                     </Item>
+		<Item> STEPX        24836.000000   REAL      um     Die Width                                                                                                                                             </Item>
+		<Item> STEPY        32638.000000   REAL      um     Die Height                                                                                                                                            </Item>
+		<Item> FLAT         180            INTEGER   deg    Orientation of wafer flat or notch in degrees                                                                                                         </Item>
+		<Item> ALIGNDIEX    -3             INTEGER          X index of alignment die                                                                                                                              </Item>
+		<Item> ALIGNDIEY    3              INTEGER          Y index of alignment die                                                                                                                              </Item>
+		<Item> ALIGNMOEX    0.00000        REAL      um     X position (in microns) of alignment modules                                                                                                          </Item>
+		<Item> ALIGNMOEY    0.00000        REAL      um     Y position (in microns) of alignment modules                                                                                                          </Item>
+		<Item> CENTERDIEX   0              INTEGER          Center die index in the wafer                                                                                                                         </Item>
+		<Item> CENTERDIEY   0              INTEGER          Center die index in the wafer                                                                                                                         </Item>
+		<Item> OFFSETDIEX   0.000000       REAL             Offset X distance from the center point of the wafer to the left bottom point of the center die                                                       </Item>
+		<Item> OFFSETDIEY   0.000000       REAL             Offset Y distance from the center point of the wafer to the left bottom point of the center die                                                       </Item>
+		<Item> COORDINATE   1              INTEGER          Define direction of coordinate. 1: (0,0) locates lower left. 2: (0,0) locates lower right. 3: (0,0) locates upper right. 4: (0,0) locates upper left  </Item>
+		<Item> WAFERSHAPE   1              INTEGER          Select the shape of wafer from wafer flat(WAFERSHAPE=0) or norch(WAFERSHAPE=1)                                                                        </Item>
+	</Attribute>
+	<Description>
+		<Head>[Description                     ] </Head>
+		<Item> Description for this Wafer spec.  </Item>
+	</Description>
+</WaferSpec>

@@ -30,6 +30,7 @@ class importOtherTestPlan:
 
     def importWafSpec(self, ks_file, shot_file):
         waf_info = get_waf.getWafInfo_TEL(ks_file, False)
+        # print(waf_info)
         waf_info.convertWithShotToDie(shot_file)
         if not waf_info.isWafSpec:
             self.err = "This is not a wafer spec file or it is empty !"
@@ -98,29 +99,52 @@ class importOtherTestPlan:
             return False, str(reason)
         self.tpx_prb.saveAsXml(os.path.join(target_dir, self.tpx_prb.Name + '.prb'))
 
-    def importTpxFile(self, filesMap: {},flagsMap: {}):
-        #waf
-        if filesMap['waf'] and not self.importWafSpec(filesMap['waf'], filesMap['shot']):
-            return False,self.err
+    def importTpxFile(self, filesMap: {}, flagsMap: {}):
+        # waf
+        if 'waf' in filesMap and filesMap['waf']:
+            if isinstance(filesMap['waf'], list):
+                for file in filesMap['waf']:
+                    if not self.importWafSpec(file, filesMap["mapping"]):
+                        return False, self.err
+            else:
+                if not self.importWafSpec(filesMap['waf'], filesMap["mapping"]):
+                    return False, self.err
 
-        #die
-        if filesMap['die'] and not self.importDieSpec(filesMap['die'],False):
-            return False,self.err
+        # die
+        if 'die' in filesMap and filesMap['die']:
+            if isinstance(filesMap['die'], list):
+                for file in filesMap['die']:
+                    if not self.importDieSpec(file, False):
+                        return False, self.err
+            else:
+                if not self.importDieSpec(filesMap['die'], False):
+                    return False, self.err
 
-        #tst
-        if filesMap['tst'] and not self.importTstSpec(filesMap['tst'], filesMap['mapping'],filesMap['limit'],
-                                  filesMap['template'],flagsMap['skipComment']):
-            return False, self.err
+        # tst
+        if 'tst' in filesMap and filesMap['tst']:
+            if isinstance(filesMap['tst'], list):
+                for file in filesMap['tst']:
+                    if not self.importTstSpec(file, filesMap['mapping'], filesMap['limit'], filesMap['template'], flagsMap['skipComment']):
+                        return False, self.err
+            else:
+                if not self.importTstSpec(filesMap['tst'], filesMap['mapping'], filesMap['limit'], filesMap['template'], flagsMap['skipComment']):
+                    return False, self.err
 
-        #prb
-        if filesMap['prb'] and not self.importPrbSpec(filesMap['prb'],False):
-            return False, self.err
+        # prb
+        if 'prb' in filesMap and filesMap['prb']:
+            if isinstance(filesMap['prb'], list):
+                for file in filesMap['prb']:
+                    if not self.importPrbSpec(file, False):
+                        return False, self.err
+            else:
+                if not self.importPrbSpec(filesMap['prb'], False):
+                    return False, self.err
 
-        #testplan
+        # testplan
         if self.tpx_waf or self.tpx_die or self.tpx_tst or self.tpx_prb:
             self.tpx = tpx.TestPlan(self.tpx_waf, self.tpx_die, self.tpx_tst, self.tpx_prb)
         else:
-            return False,'Please select at least one spec file !'
+            return False, 'Please select at least one spec file !'
         return True, ''
 
     def exportTpx(self, target_dir):
